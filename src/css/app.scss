@@ -1,9 +1,19 @@
-@import "./utils/fonts";
-@import "./utils/reset";
+// Base
+@import "base/custom-properties";
+@import "base/fonts";
 
-@import "./layout/common";
-@import "./layout/typography";
-@import "./layout/links";
+// Utils
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/reset";
 
+// Layout
+@import "layout/common";
+@import "layout/typography";
+@import "layout/links";
+
+// Components
 @import "../components/layout/Header/Header";
 @import "../components/layout/Footer/Footer";
+
+@import "../components/shared/ArticleItem/ArticleItem.scss";

@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-const LINKS = [
-    {
-        text: "About",
-        url: "/about",
-    },
-];
+type InnerLink = {
+    text: string;
+    url: string;
+};
+
+const LINKS: InnerLink[] = [];
 
 const Header = () => {
     return (
         <header className="header">
-            <Link to="/" className="h3">
+            <Link to="/" className="h3 header__logo">
                 BarawWeb
             </Link>
 
